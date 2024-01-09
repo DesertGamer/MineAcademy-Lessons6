@@ -1,0 +1,23 @@
+#
+# This is the file your server opens to find the main class of your
+# plugin and its information. We automatically replace variables here
+# from your pom.xml file.
+#
+# See https://www.spigotmc.org/wiki/plugin-yml/ for more information.
+#
+name: ${name}
+version: ${version}
+main: git.desertgamer.lesson6.PluginTemplate
+# DO NOT EDIT. This api-version is used for maximum backward compatibility.
+author: "MrDefri"
+# DO NOT EDIT. This will enable Nashorn library on servers using Java 15 or greater.\\
+libraries:
+  - org.openjdk.nashorn:nashorn-core:15.4
+# Plugins that we support so that we are loaded after them for your convenience.
+softdepend: [AuthMe, BanManager, BungeeChatAPI, CMI, DiscordSRV, Factions, Feudal, ItemsAdder, Essentials, LegacyFactions, Lands, LuckPerms, Multiverse-Core, MVdWPlaceholderAPI, MythicMobs, mcMMO, NashornPlus, Nicky, PlaceholderAPI, ProtocolLib, SimpleClans, Towny, TownyChat, Vault, WorldEdit]
+api-version: 1.18
+#
+# The commands are built at runtime so you can change them easily within the settings.
+# Do not change anything in here, you will break the plugin and get no support.
+#
+commands:
